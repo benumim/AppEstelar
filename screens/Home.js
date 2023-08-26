@@ -35,14 +35,14 @@ export default class HomeScreen extends Component {
                     <TouchableOpacity style={styles.routeCard} onPress={() =>
                         this.props.navigation.navigate("StarMap")
                     }>
-                        <Text style={styles.routeText}>Mapa Estelar</Text>
+                        <Text style={styles.routeText}>Mapa das Estrelas</Text>
                         <Image source={require("../assets/star_map.png")} style={styles.routeImage}></Image>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.routeCard} onPress={() =>
                         this.props.navigation.navigate("DailyPic")
                     }>
-                        <Text style={styles.routeText}>Fotos Diárias</Text>
+                        <Text style={styles.routeText}>Fotos do Dia</Text>
                         <Image source={require("../assets/daily_pictures.png")} style={styles.routeImage}></Image>
                     </TouchableOpacity>
                 </ImageBackground>
