@@ -27,12 +27,7 @@ export default class DailyPicScreen extends Component {
     }
 
     renderImage = (url) => {
-
-         <Image source={{ "uri": url }} 
-          style={{ width: "100%", height: 300, 
-          borderRadius: 20, margin: 3 }}>
-         </Image>
-        
+        <Image source={{ "uri": url }} style={{ width: "100%", height: 300, borderRadius: 20, margin: 3 }}></Image>
     }
 
     renderVideo = () => {
@@ -51,7 +46,7 @@ export default class DailyPicScreen extends Component {
             return (
                 <View
                     style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-                    <Text>Loading</Text>
+                    <Text>Carregando</Text>
                 </View>
             )
         }
@@ -61,11 +56,11 @@ export default class DailyPicScreen extends Component {
                     <SafeAreaView style={styles.droidSafeArea} />
                     <ImageBackground source={require('../assets/stars.gif')} style={styles.backgroundImage}>
                         <View style={{ flex: 0.15, justifyContent: "center", textAlign: "center" }}>
-                            <Text style={styles.routeText}>Foto do Dia</Text>
+                            <Text style={styles.routeText}>Foto Diária</Text>
                         </View>
                         <ScrollView style={styles.listContainer}>
                             <TouchableOpacity
-                                onPress={() => Linking.openURL(this.state.apod.url).catch(err => console.error("Não foi possível carregar a página", err))}
+                                onPress={() => Linking.openURL(this.state.apod.url).catch(err => console.error("Couldn't load page", err))}
                             >
                                 <Image source={{ "uri": url }} style={{ width: "100%", height: 300, borderRadius: 10 }}></Image>
                             </TouchableOpacity >

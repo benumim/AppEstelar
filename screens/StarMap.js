@@ -17,7 +17,7 @@ export default class StarMapScreen extends Component {
             <View style={{ flex: 1, backgroundColor: "#1a0023" }}>
                 <SafeAreaView style={styles.droidSafeArea} />
                 <View style={{ flex: 0.3, marginTop: 20, alignItems: 'center' }}>
-                    <Text style={styles.titleText}>Mapa das Estrelas</Text>
+                    <Text style={styles.titleText}>Mapa Estelar</Text>
                     <TextInput
                         style={styles.inputStyle}
                         placeholder="Digite sua longitude"
